@@ -42,7 +42,7 @@ sub gohttp {
 		$cb->(sprintf('request timeout: %gs', $timeout));
 	};
 	#$state->{guard} = http_request(GET =>'http://127.0.0.1:52241/',
-	$state->{guard} = http_request(GET =>'https://forum.ocean.ru/',
+	$state->{guard} = http_request(GET =>'http://localhost.mail.ru:52241/',
 		headers   => {},
 		recurse   => 0,
 		timeout   => 1,
